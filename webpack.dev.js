@@ -6,14 +6,14 @@ module.exports = {
   entry: {
     app: './src/index.js'
   },
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.(js|jsx)$/,
-  //       use: ['babel-loader'],
-  //     },
-  //   ],
-  // },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        use: ['babel-loader'],
+      },
+    ],
+  },
   devServer: {
     // hot: true,
     inline: true,

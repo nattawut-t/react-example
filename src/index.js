@@ -1,4 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-render(function () { return 'OK' }, document.querySelector('react'))
+const Root = function () { return 'OK' }
+
+render(<Root />, document.querySelector('react'))
