@@ -14,6 +14,14 @@ module.exports = {
   //     },
   //   ],
   // },
+  devServer: {
+    // hot: true,
+    inline: true,
+    host: '0.0.0.0',
+    contentBase: './',
+    publicPath: '/',
+    historyApiFallback: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
