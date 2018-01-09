@@ -1,0 +1,24 @@
+What to know for React
+    - Package Manager:
+        - npm
+        - yarn
+    - ES2015(ES6)
+        - destructor
+        - trailling comma
+        - commonjs
+        - es6 module
+    - Jsx
+    - State
+    - Props
+    - Component 
+        - Dump (Stateless) / Smart
+        - Lifecycle
+    - Webpack
+        - Entry
+        - Output
+        - Loader
+        - Plugin
+    - Babel
+        - loader
+        - preset: ชุดของภาษาที่ใช้ในการ compile
+            
