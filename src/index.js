@@ -1,6 +1,9 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-const Root = function () { return 'OK' }
+import 'bootstrap/dist/css/bootstrap.css';
+import '../css/main.css'
 
-render(<Root />, document.querySelector('react'))
+import Index from './components/Index'
+
+render(<Index />, document.querySelector('react'))

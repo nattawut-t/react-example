@@ -4,8 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "css-loader": "^0.28.8",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "reactstrap": "^5.0.0-alpha.4",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
   },
   "devDependencies": {

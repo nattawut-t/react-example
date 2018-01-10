@@ -1,24 +1,130 @@
 What to know for React
-    - Package Manager:
-        - npm
-        - yarn
-    - ES2015(ES6)
-        - destructor
-        - trailling comma
+
+Package Manager:
+    - npm
+    - yarn
+
+JavaScript ES2015 / ES2016 (ES6/ES7):
+    - Module Loader:
         - commonjs
+            - using
         - es6 module
-    - Jsx
+            - compile with babel
+    - let, const
+    - Arrow Function
+    - Destructor
+    - Spread Operator
+    - Rest Parameter
+    - Built-in Properties and Functions
+        - Object
+            - Object.keys
+            - Object.values
+
+        - Array
+            - Array.isArray
+            - map
+            - find
+            - sort
+            - forEach
+
+        - Number
+            - Number.parseInt
+            - Number.parseFloat
+            - Number.isNaN
+
+        - Math
+            - Math.ceil
+            - Math.floor
+    - String Literal
+    - Non-semicolon (code style)
+    - Trailling Comma (code style)
+
+React:
+    - One-Way Data Binding / Unidirectional Data Binding
+        - เข้าใจได้ง่ายกว่า
+        - ตรงไปตรงมา
+        - ประสิทธิภาพที่สูงกว่า
+        - Predictable
+    
+    - Virtual DOM
+        - การสร้าง HTML elements หรือเปลี่ยนแปลงค่าจะใช้เวลาในการทำงานมาก
+        - สร้าง dom เสมือนไว้ในหน่วยความจำ
+        - compare diff of real and virtual dom to make only necessary changes when component state changed
+
+    - Server-Side Rendering
+        - Support SEO
+            - Recommendation for Next.js (similar to Vue.js)
+        - Request แรกช้าเพราะต้องโหลด JavaScript ก่อนโหลด content
+        - ส่ง response มาพร้อมเนื้อหาในการ request ครั้งแรก
+
+    - Universal Application
+        - แยกส่วนที่ขึ้นตรงกับ platform เป็น package
+        - Mobile application with React Native
+        - Web application with React JS (react dom)
+
+    - JavaScript Centric
+        - Html inside JavaScript
+
+    - JSX
+        - JavaScript XML
+        - ECMAScript Extension
+        - เขียน XML-Like Syntax บน JavaScript
+        - ต้องถูก Compile / Transpire ก่อนนำไปใช้งาน
+
+    - Component
+        - What is component:
+        - Dump component
+        - Smart component (Container)
+        - Stateless component
+    
     - State
+        - Changable data in component
+        - Use only in that component if no any parsing to children
+
     - Props
-    - Component 
-        - Dump (Stateless) / Smart
-        - Lifecycle
-    - Webpack
+        - Data parsed from parent (outside)
+        - Need to call parent callback for changing data
+
+    - Lifecycle
+        - Mount: bind / associate React component to DOM node
+            - componentWillMount
+            - render
+            - componentDidMount
+        - State change
+            - shouldComponentUpdate
+            - componentWillUpdate
+            - render
+            - componentDidUpdate
+        - Props change
+            - componentWillReceiveProps
+            - shouldComponentUpdate
+            - componentWillUpdate
+            - render
+            - componentDidUpdate
+        - Unmount: unbind / unassociate React component from DOM node
+            - componentWillUnmount
+
+    - Parent / Child
+    - Conditional
+
+Webpack:
+    - What is webpack:
+        - web bundler / build tool
+        - browserify
+        - 
+
+    - Configuration:
         - Entry
         - Output
         - Loader
         - Plugin
-    - Babel
-        - loader
-        - preset: ชุดของภาษาที่ใช้ในการ compile
+    
+    - Webpack Dev Server
+        - Live reload
+        - Hot module replacement
+        - In-memory bundling
+Babel:
+    - What is babel:
+    - Loader
+    - Preset: ชุดของภาษาที่ใช้ในการ compile
             
